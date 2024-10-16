@@ -6,7 +6,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="falan"
+        path="/"
         element={
           <div className="App">
             <header className="App-header">
