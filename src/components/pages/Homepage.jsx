@@ -1,19 +1,38 @@
 import React, { Component } from "react";
-import logo from "../../logo.svg";
-import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as categoryActions from "../../redux/actions/categoryActions";
 
-export default class Homepage extends Component {
+class Homepage extends Component {
+  componentDidMount() {
+    this.props.actions.getCategories();
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code> src / App.js </code> and save to reload.
-          </p>
-          <Link to="deneme">Learn React</Link>
-        </header>
+      <div>
+        <h1>Anasayfa</h1>
+        {this.props.categories.map((c) => (
+          <h3 key={c.id}>{c.categoryName}</h3>
+        ))}
       </div>
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: {
+      getCategories: bindActionCreators(
+        categoryActions.getCategories,
+        dispatch
+      ),
+    },
+  };
+}
+function mapStateToProps(state) {
+  return {
+    categories: state.categoryListReducer,
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
