@@ -16,7 +16,7 @@ export function getCategoriesSuccess(categories) {
 
 export function getCategories() {
   return function (dispatch) {
-    let url = "http://localhost:3000/categories";
+    let url = "https://eneskarapinar.github.io/aek/api/categories.json";
     return fetch(url)
       .then((response) => response.json())
       .then((result) => dispatch(getCategoriesSuccess(result)));
