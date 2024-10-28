@@ -4,6 +4,7 @@ import App from "./components/root/App";
 import { HashRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import configureStore from "./redux/reducers/configureStore";
+import "./css/main.css";
 
 const store = configureStore();
 

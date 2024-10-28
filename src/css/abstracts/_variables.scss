@@ -1,0 +1,31 @@
+$color: (
+  "white": #fbfaf5,
+  "black": #0a0f1b,
+  "orange": #ffa621,
+  "orange-d": #ffa62180,
+  "orange-dd": #ffa62146,
+);
+$font: ("Poppins", sans-serif);
+$font-weight: (
+  "r": 400,
+  "m": 500,
+  "b": 700,
+);
+$cursor-default: (
+  "l-default":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/l-default.svg"),
+  "d-default":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-default.svg"),
+);
+$cursor-link: (
+  "l-link":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/l-link.svg"),
+  "d-link":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-link.svg"),
+);
+$cursor-text: (
+  "l-text":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/l-text.svg"),
+  "d-text":
+    url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-text.svg"),
+);
