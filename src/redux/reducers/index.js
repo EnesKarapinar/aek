@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import categoryListReducer from "./categoryListReducer";
+import projectsListReducer from "./projectsListReducer";
 
 const rootReducer = combineReducers({
-  categoryListReducer,
+  projectsListReducer,
 });
 
 export default rootReducer;

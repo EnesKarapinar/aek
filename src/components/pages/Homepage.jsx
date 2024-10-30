@@ -21,9 +21,7 @@ class Homepage extends Component {
             </h3>
           </div>
           <div className="bottom">
-            <h1 data-translate="homepage-hood">
-              Merhaba, Ben Abdullah Enes KARAPINAR
-            </h1>
+            <h1>Merhaba, Ben Abdullah Enes KARAPINAR</h1>
           </div>
         </div>
         <div className="img">

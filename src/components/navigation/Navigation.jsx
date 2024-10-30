@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import * as app from "../../js/app";
 
 export default class Navigation extends Component {
+  componentDidMount() {
+    app.activePage(window.location.hash);
+  }
+
   render() {
     return (
       <nav>
         <div className="navbar">
           <div className="logo">
-            <Link to="/" aria-label="Anasayfa">
+            <Link
+              to="/"
+              aria-label="Anasayfa"
+              onClick={(e) => app.activePage("#/", e)}
+            >
               <img
                 alt="Logo"
                 src="https://eneskarapinar.github.io/aek/img/aekLogoBlack2.webp"
@@ -20,23 +29,43 @@ export default class Navigation extends Component {
           </div>
           <div className="content">
             <div className="pages">
-              <Link to="/" className="page active">
+              <Link
+                to="/"
+                className="page navHome"
+                onClick={(e) => app.activePage("#/", e)}
+              >
                 <h6>Anasayfa</h6>
                 <span className="line"></span>
               </Link>
-              <Link to="about" className="page">
+              <Link
+                to="about"
+                className="page navAbout"
+                onClick={(e) => app.activePage("#/about", e)}
+              >
                 <h6>Hakkımda</h6>
                 <span className="line"></span>
               </Link>
-              <Link to="projects" className="page">
+              <Link
+                to="projects"
+                className="page navProjects"
+                onClick={(e) => app.activePage("#/projects", e)}
+              >
                 <h6>Projeler</h6>
                 <span className="line"></span>
               </Link>
-              <Link to="certificates" className="page">
+              <Link
+                to="certificates"
+                className="page navCertificates"
+                onClick={(e) => app.activePage("#/certificates", e)}
+              >
                 <h6>Sertifikalar</h6>
                 <span className="line"></span>
               </Link>
-              <Link href="contact" className="page">
+              <Link
+                to="contact"
+                className="page navContact"
+                onClick={(e) => app.activePage("#/contact", e)}
+              >
                 <h6>İletişim</h6>
                 <span className="line"></span>
               </Link>
