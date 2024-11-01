@@ -10,7 +10,8 @@
     "projectType": "Freelancer İş",
     "deliveryDate": "2020",
     "langsAndTech": "HTML, CSS, JS",
-    "desc": "Freelance sitelerden alınan bu işte tasarım PDF olarak verildi. Ben de bir arkadaşımla birlikte front-end kodlamasını gerçekleştirdik."
+    "desc": "Freelance sitelerden alınan bu işte tasarım PDF olarak verildi. Ben de bir arkadaşımla birlikte front-end kodlamasını gerçekleştirdik.",
+    "link": ""
   },
   {
     "id": 1,
@@ -23,7 +24,8 @@
     "projectType": "Klon",
     "deliveryDate": "2022",
     "langsAndTech": "HTML, CSS",
-    "desc": "Eğitim aldığım zamanlarda ödev olarak verilen freelancer sitesinin klonu."
+    "desc": "Eğitim aldığım zamanlarda ödev olarak verilen freelancer sitesinin klonu.",
+    "link": ""
   },
   {
     "id": 2,
@@ -36,7 +38,8 @@
     "projectType": "Freelancer İş",
     "deliveryDate": "2022",
     "langsAndTech": "HTML, CSS, JS",
-    "desc": "Freelance sitelerden alınan bu işte tasarım PDF olarak verildi ve ben de front-end kodlamasını gerçekleştirdim."
+    "desc": "Freelance sitelerden alınan bu işte tasarım PDF olarak verildi ve ben de front-end kodlamasını gerçekleştirdim.",
+    "link": ""
   },
   {
     "id": 3,
@@ -49,7 +52,8 @@
     "projectType": "Klon",
     "deliveryDate": "2022",
     "langsAndTech": "HTML, CSS, JS, Jquery",
-    "desc": "Eğitim aldığım zamanlarda ödev olarak verilen WhatsApp Klonu."
+    "desc": "Eğitim aldığım zamanlarda ödev olarak verilen WhatsApp Klonu.",
+    "link": ""
   },
   {
     "id": 4,
@@ -62,7 +66,8 @@
     "projectType": "Kişisel Site",
     "deliveryDate": "2023",
     "langsAndTech": "HTML, CSS, JS, Jquery, PWA",
-    "desc": "Kendime portfolyo olarak hazırladığım ilk web sitem."
+    "desc": "Kendime portfolyo olarak hazırladığım ilk web sitem.",
+    "link": ""
   },
   {
     "id": 5,
@@ -75,7 +80,8 @@
     "projectType": "Kendimi Geliştirme",
     "deliveryDate": "05/05/2023",
     "langsAndTech": "HTML, SCSS, JS, Jquery",
-    "desc": "Kendimi geliştirmek amaçlı Lokum Games'e yaptığım web sitesi."
+    "desc": "Kendimi geliştirmek amaçlı Lokum Games'e yaptığım web sitesi.",
+    "link": ""
   },
   {
     "id": 6,
@@ -88,7 +94,8 @@
     "projectType": "Freelancer İş",
     "deliveryDate": "07/03/2023",
     "langsAndTech": "HTML, CSS, JS, Jquery",
-    "desc": "Freelance sitelerden alınan bu işte tek sayfalık tasarım PNG olarak verildi ve ben de front-end kodlamasını gerçekleştirdim."
+    "desc": "Freelance sitelerden alınan bu işte tek sayfalık tasarım PNG olarak verildi ve ben de front-end kodlamasını gerçekleştirdim.",
+    "link": ""
   },
   {
     "id": 7,
@@ -101,7 +108,8 @@
     "projectType": "Freelancer İş",
     "deliveryDate": "2023",
     "langsAndTech": "HTML, SCSS, JS, Jquery",
-    "desc": "Freelance olarak alınan bu işte tasarım Figmadan teslim edildi. Ben de front-end kodlamasını gerçekleştirdim."
+    "desc": "Freelance olarak alınan bu işte tasarım Figmadan teslim edildi. Ben de front-end kodlamasını gerçekleştirdim.",
+    "link": ""
   },
   {
     "id": 8,
@@ -114,7 +122,8 @@
     "projectType": "Okul Projesi",
     "deliveryDate": "2024",
     "langsAndTech": "Unity, C#",
-    "desc": "Yazılım Gereksinimleri ve Analizi dersi kapsamında yapmış olduğum oyun projesi."
+    "desc": "Yazılım Gereksinimleri ve Analizi dersi kapsamında yapmış olduğum oyun projesi.",
+    "link": ""
   },
   {
     "id": 9,
@@ -127,7 +136,8 @@
     "projectType": "Staj",
     "deliveryDate": "31/07/2024",
     "langsAndTech": "HTML, SCSS, JS, Jquery",
-    "desc": "Staj projesi olarak verilen bir sitedir. Tasarımını yapıp daha sonra front-end kodlamasını yaptım."
+    "desc": "Staj projesi olarak verilen bir sitedir. Tasarımını yapıp daha sonra front-end kodlamasını yaptım.",
+    "link": ""
   },
   {
     "id": 10,
@@ -140,7 +150,8 @@
     "projectType": "Kendimi Geliştirme",
     "deliveryDate": "07/08/2024",
     "langsAndTech": "Unity, C#",
-    "desc": "Udemy'den aldığım eğitimde yapılan oyunun aynısını yaptım. Kendimce biraz yorumda ekledim."
+    "desc": "Udemy'den aldığım eğitimde yapılan oyunun aynısını yaptım. Kendimce biraz yorumda ekledim.",
+    "link": ""
   },
   {
     "id": 11,
@@ -153,7 +164,8 @@
     "projectType": "Kendimi Geliştirme",
     "deliveryDate": "08/08/2024",
     "langsAndTech": "Unity, C#",
-    "desc": "Udemy'den aldığım eğitimde yapılan oyunun aynısını yaptım. Kendimce biraz yorumda ekledim."
+    "desc": "Udemy'den aldığım eğitimde yapılan oyunun aynısını yaptım. Kendimce biraz yorumda ekledim.",
+    "link": ""
   },
   {
     "id": 12,
@@ -166,6 +178,7 @@
     "projectType": "Mobil Oyun",
     "deliveryDate": "29/08/2024",
     "langsAndTech": "Unity, C#",
-    "desc": "İlk mobil oyun deneyimimdir. Şu anda Play Store'da kapalı test sürümü yayında. Zorunlu bekleme süresi geçince oyunum tamamen yayınlanmış olacak."
+    "desc": "İlk mobil oyun deneyimimdir. Şu anda Play Store'da kapalı test sürümü yayında. Zorunlu bekleme süresi geçince oyunum tamamen yayınlanmış olacak.",
+    "link": ""
   }
 ]
