@@ -11,7 +11,7 @@
     "deliveryDate": "2020",
     "langsAndTech": "HTML, CSS, JS",
     "desc": "Freelance sitelerden alınan bu işte tasarım PDF olarak verildi. Ben de bir arkadaşımla birlikte front-end kodlamasını gerçekleştirdik.",
-    "link": ""
+    "link": "https://www.urlaciftlik.com/"
   },
   {
     "id": 1,
@@ -109,7 +109,7 @@
     "deliveryDate": "2023",
     "langsAndTech": "HTML, SCSS, JS, Jquery",
     "desc": "Freelance olarak alınan bu işte tasarım Figmadan teslim edildi. Ben de front-end kodlamasını gerçekleştirdim.",
-    "link": ""
+    "link": "https://rformmimarlik.com/"
   },
   {
     "id": 8,
@@ -137,7 +137,7 @@
     "deliveryDate": "31/07/2024",
     "langsAndTech": "HTML, SCSS, JS, Jquery",
     "desc": "Staj projesi olarak verilen bir sitedir. Tasarımını yapıp daha sonra front-end kodlamasını yaptım.",
-    "link": ""
+    "link": "https://santasmak.com/"
   },
   {
     "id": 10,
@@ -179,6 +179,6 @@
     "deliveryDate": "29/08/2024",
     "langsAndTech": "Unity, C#",
     "desc": "İlk mobil oyun deneyimimdir. Şu anda Play Store'da kapalı test sürümü yayında. Zorunlu bekleme süresi geçince oyunum tamamen yayınlanmış olacak.",
-    "link": ""
+    "link": "https://play.google.com/store/apps/details?id=com.aek.animalsmerge&pli=1"
   }
 ]
