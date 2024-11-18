@@ -1,31 +1,29 @@
-[
-  {
-    "name": "Abdullah Enes",
-    "surname": "Karapınar",
-    "birth_date": "2002",
-    "nation": "Türkiye",
-    "language": "Türkçe",
-    "email": "karapinarabdullahenes@gmail.com",
-    "cv_link": "",
-    "work_experience": "-",
-    "social_medias": {
-      "bionluk": {
-        "name": "Bionluk",
-        "link": "https://bionluk.com/eneskarapinar"
-      },
-      "linkedin": {
-        "name": "Linkedin",
-        "link": "https://www.linkedin.com/in/aekk/"
-      },
-      "github": {
-        "name": "Github",
-        "link": "https://github.com/EnesKarapinar"
-      },
-      "instagram": {
-        "name": "Instagram",
-        "link": "https://www.instagram.com/a.eneskarapinar/"
-      }
+{
+  "name": "Abdullah Enes",
+  "surname": "Karapınar",
+  "birth_date": "2002",
+  "nation": "Türkiye",
+  "language": "Türkçe",
+  "email": "karapinarabdullahenes@gmail.com",
+  "cv_link": "",
+  "work_experience": "-",
+  "social_medias": {
+    "bionluk": {
+      "name": "Bionluk",
+      "link": "https://bionluk.com/eneskarapinar"
     },
-    "skills": {}
-  }
-]
+    "linkedin": {
+      "name": "Linkedin",
+      "link": "https://www.linkedin.com/in/aekk/"
+    },
+    "github": {
+      "name": "Github",
+      "link": "https://github.com/EnesKarapinar"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/a.eneskarapinar/"
+    }
+  },
+  "skills": {}
+}
