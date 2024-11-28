@@ -25,5 +25,34 @@
       "link": "https://www.instagram.com/a.eneskarapinar/"
     }
   ],
-  "skills": {}
+  "skills": [
+    {
+      "name": "HtMl",
+      "compotence": 90
+    },
+    {
+      "name": "CSS",
+      "compotence": 95
+    },
+    {
+      "name": "scss",
+      "compotence": 80
+    },
+    {
+      "name": "js",
+      "compotence": 50
+    },
+    {
+      "name": "jQuery",
+      "compotence": 50
+    },
+    {
+      "name": "vue",
+      "compotence": 20
+    },
+    {
+      "name": "React JS",
+      "compotence": 60
+    }
+  ]
 }
