@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/aek/static/css/main.da72de7b.css",
-    "main.js": "/aek/static/js/main.8074da64.js",
+    "main.css": "/aek/static/css/main.392c1499.css",
+    "main.js": "/aek/static/js/main.90f899f7.js",
     "index.html": "/aek/index.html",
-    "main.da72de7b.css.map": "/aek/static/css/main.da72de7b.css.map",
-    "main.8074da64.js.map": "/aek/static/js/main.8074da64.js.map"
+    "main.392c1499.css.map": "/aek/static/css/main.392c1499.css.map",
+    "main.90f899f7.js.map": "/aek/static/js/main.90f899f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.da72de7b.css",
-    "static/js/main.8074da64.js"
+    "static/css/main.392c1499.css",
+    "static/js/main.90f899f7.js"
   ]
 }
