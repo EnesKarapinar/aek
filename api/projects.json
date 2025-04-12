@@ -180,5 +180,19 @@
     "langsAndTech": "Unity, C#",
     "desc": "İlk mobil oyun deneyimimdir. Şu anda Play Store'da kapalı test sürümü yayında. Zorunlu bekleme süresi geçince oyunum tamamen yayınlanmış olacak.",
     "link": "https://play.google.com/store/apps/details?id=com.aek.animalsmerge"
+  },
+  {
+    "id": 13,
+    "idName": "1m1",
+    "category": "web-programlama-box",
+    "imgPath": "/img/freelancer/1m1.png",
+    "name1": "Bir Milyonda",
+    "name2": "Bir",
+    "hoverTxt": "",
+    "projectType": "Proje",
+    "deliveryDate": "-",
+    "langsAndTech": "React JS, Redux, Fetch API, SCSS",
+    "desc": "Projede Front-end alanında görev alarak, React JS ile geliştirdiğim ilk web sitesini hayata geçirdim.",
+    "link": "https://birmilyondabir.com/"
   }
 ]

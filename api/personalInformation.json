@@ -38,11 +38,11 @@
     },
     {
       "name": "scss",
-      "compotence": 80
+      "compotence": 90
     },
     {
       "name": "js",
-      "compotence": 50
+      "compotence": 60
     },
     {
       "name": "jQuery",
@@ -54,7 +54,7 @@
     },
     {
       "name": "React JS",
-      "compotence": 60
+      "compotence": 70
     }
   ],
   "contacts": [
