@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "category": "nasa-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/nasaSpaceApps2022.png",
+    "link": "https://lean-sleep-c78.notion.site/Nasa-Space-Apps-Challenge-2022-0a07177b57c04edf8e841208c41f512f",
+    "desc": "Nasa Space Apps 2022 Elazığ Birinciliği",
+    "class": "dark"
+  },
+  {
+    "id": 1,
+    "category": "web-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/webProgramlama.png",
+    "link": "https://lean-sleep-c78.notion.site/Web-Programlama-c002f29e94e442049cfe88e19e56d788",
+    "desc": "Web Programlama",
+    "class": ""
+  },
+  {
+    "id": 2,
+    "category": "web-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/HTML5ileWenGelistirme.png",
+    "link": "https://lean-sleep-c78.notion.site/HTML5-ile-Web-Geli-tirme-96c43af5a8c2457caea4c2dbb6b5005d",
+    "desc": "HTML5 ile Web Geliştirme",
+    "class": ""
+  },
+  {
+    "id": 3,
+    "category": "web-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/WebSitesiKullanabilirligi.png",
+    "link": "https://lean-sleep-c78.notion.site/Web-Sitesi-Kullanabilirli-i-9eed277585474660be78c304ecbf2c0d",
+    "desc": "Web Sitesi Kullanabilirliği",
+    "class": ""
+  },
+  {
+    "id": 4,
+    "category": "web-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/cssTemelleri.png",
+    "link": "https://lean-sleep-c78.notion.site/CSS-Temelleri-06f98b20ee164003b0ecc9e4c1c1aa69",
+    "desc": "CSS Temelleri",
+    "class": ""
+  },
+  {
+    "id": 5,
+    "category": "cs-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/csIleAlgoritmaVeProgramlama.png",
+    "link": "https://lean-sleep-c78.notion.site/C-ile-Algoritma-ve-Programlama-808d0397378c4c919657cb78e1b324e4",
+    "desc": "C# ile Algoritma ve Programlama",
+    "class": ""
+  },
+  {
+    "id": 6,
+    "category": "cs-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/csFormileGorselProgramlama.png",
+    "link": "https://lean-sleep-c78.notion.site/C-Form-ile-G-rsel-ve-Nesne-Tabanl-Programlama-ad9a7695bc0f4ab3bd6fc7a730329052",
+    "desc": "C# Form ile Görsel ve Nesne Tabanlı Programlama",
+    "class": ""
+  },
+  {
+    "id": 7,
+    "category": "iletisim-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/EtkiliIletisimStratejileri.png",
+    "link": "https://lean-sleep-c78.notion.site/Etkili-leti-im-Stratejileri-d0f854bd2f25445f9b11d6d8396745b6",
+    "desc": "Etkili İletişim Stratejileri",
+    "class": ""
+  },
+  {
+    "id": 8,
+    "category": "oyun-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/unityCSharp.jpg",
+    "link": "https://lean-sleep-c78.notion.site/Unity-C-1d064c8478764d78aefffa1d2a4e009e?pvs=4",
+    "desc": "Unity C#",
+    "class": ""
+  }
+]

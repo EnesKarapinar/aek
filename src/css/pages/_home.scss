@@ -26,8 +26,18 @@
           font-size: 20px;
           font-weight: map-get($font-weight, "m");
           color: map-get($color, "orange");
-          .wrap {
-            border-right: 0.08em solid map-get($color, "orange");
+          .cursor {
+            display: inline-block;
+            animation: blink 0.7s infinite;
+          }
+          @keyframes blink {
+            0%,
+            100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
           }
         }
       }

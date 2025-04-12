@@ -1,13 +1,63 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import * as app from "../../js/app";
+import * as changesActions from "../../redux/actions/changesActions";
+import $ from "jquery";
+import { withTranslation } from "react-i18next";
 
-export default class Navigation extends Component {
+class Navigation extends Component {
   componentDidMount() {
     app.activePage(window.location.hash);
+    this.getTheme();
+    this.getLanguage();
   }
 
+  componentDidUpdate() {
+    this.getTheme();
+    this.getLanguage();
+  }
+
+  changeLanguage = () => {
+    if (localStorage.getItem("i18nextLng") === "en") {
+      $("nav").removeClass("en");
+      $("html").attr("lang", "tr");
+      this.props.i18n.changeLanguage("tr");
+    } else {
+      $("nav").addClass("en");
+      $("html").attr("lang", "en");
+      this.props.i18n.changeLanguage("en");
+    }
+  };
+
+  getLanguage() {
+    // Dilin Ilk Acilista Yuklenmesi
+    if (localStorage.getItem("i18nextLng") === "en") {
+      $("nav").addClass("en");
+      $("html").attr("lang", "en");
+    } else {
+      $("nav").removeClass("en");
+      $("html").attr("lang", "tr");
+    }
+  }
+
+  getTheme() {
+    if (this.props.theme === "dark") {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }
+
+  changeTheme = () => {
+    const newTheme = this.props.theme === "light" ? "dark" : "light";
+    this.props.actions.changeTheme(newTheme);
+  };
+
   render() {
+    const { t } = this.props;
+
     return (
       <nav>
         <div className="navbar">
@@ -34,7 +84,7 @@ export default class Navigation extends Component {
                 className="page navHome"
                 onClick={(e) => app.activePage("#/", e)}
               >
-                <h6>Anasayfa</h6>
+                <h6>{t("nav_home")}</h6>
                 <span className="line"></span>
               </Link>
               <Link
@@ -42,7 +92,7 @@ export default class Navigation extends Component {
                 className="page navAbout"
                 onClick={(e) => app.activePage("#/about", e)}
               >
-                <h6>Hakkımda</h6>
+                <h6>{t("nav_about")}</h6>
                 <span className="line"></span>
               </Link>
               <Link
@@ -50,7 +100,7 @@ export default class Navigation extends Component {
                 className="page navProjects"
                 onClick={(e) => app.activePage("#/projects", e)}
               >
-                <h6>Projeler</h6>
+                <h6>{t("nav_projects")}</h6>
                 <span className="line"></span>
               </Link>
               <Link
@@ -58,7 +108,7 @@ export default class Navigation extends Component {
                 className="page navCertificates"
                 onClick={(e) => app.activePage("#/certificates", e)}
               >
-                <h6>Sertifikalar</h6>
+                <h6>{t("nav_certificates")}</h6>
                 <span className="line"></span>
               </Link>
               <Link
@@ -66,16 +116,16 @@ export default class Navigation extends Component {
                 className="page navContact"
                 onClick={(e) => app.activePage("#/contact", e)}
               >
-                <h6>İletişim</h6>
+                <h6>{t("nav_contact")}</h6>
                 <span className="line"></span>
               </Link>
             </div>
             <div className="settings">
-              <div className="languages">
+              <div className="languages" onClick={this.changeLanguage}>
                 <span>EN</span>
                 <span>TR</span>
               </div>
-              <div className="dark-light-mode">
+              <div className="dark-light-mode" onClick={this.changeTheme}>
                 <svg
                   id="dark"
                   xmlns="http://www.w3.org/2000/svg"
@@ -160,3 +210,22 @@ export default class Navigation extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    theme: state.changeThemeReducer,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: {
+      changeTheme: bindActionCreators(changesActions.changeTheme, dispatch),
+    },
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withTranslation()(Navigation));

@@ -287,7 +287,7 @@ body #root nav .navbar .content .settings .languages span {
   font-weight: 700;
   color: #ffa621;
   position: absolute;
-  top: 0;
+  top: calc(50% - 10px);
   transition: 400ms all;
 }
 body #root nav .navbar .content .settings .languages span:nth-child(1) {
@@ -325,14 +325,14 @@ body #root nav .navbar.change {
   box-shadow: 0px 0px 5px rgba(10, 15, 27, 0.25);
   transition: 400ms;
 }
-body #root .mobile-nav {
-  display: none;
-}
-body.en nav .navbar .settings .languages span:nth-child(1) {
+body #root nav.en .navbar .settings .languages span:nth-child(1) {
   left: -100% !important;
 }
-body.en nav .navbar .settings .languages span:nth-child(2) {
+body #root nav.en .navbar .settings .languages span:nth-child(2) {
   left: 0 !important;
+}
+body #root .mobile-nav {
+  display: none;
 }
 body.dark #root nav .navbar .content .pages .page h6 {
   cursor: url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-link.svg"), pointer;
@@ -351,20 +351,20 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
 }
 
 @media screen and (max-width: 992px) {
-  #root nav .navbar .logo {
+  body #root nav .navbar .logo {
     width: 80px;
     height: 20px;
   }
-  #root nav .navbar .content {
+  body #root nav .navbar .content {
     gap: 20px;
   }
-  #root nav .navbar .content .pages {
+  body #root nav .navbar .content .pages {
     gap: 15px;
   }
-  #root nav .navbar .content .pages .page h6 {
+  body #root nav .navbar .content .pages .page h6 {
     font-size: 16px;
   }
-  #root nav .navbar .content .settings {
+  body #root nav .navbar .content .settings {
     gap: 10px;
   }
 }
@@ -497,16 +497,16 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   body.en .mobile-nav .content .settings .dark-lang .languages span:nth-child(2) {
     left: 0;
   }
-  body.dark .mobile-nav .content .settings .dark-lang .languages span {
+  body.dark #root .mobile-nav .content .settings .dark-lang .languages span {
     cursor: url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-link.svg"), pointer;
   }
-  body.dark .mobile-nav .content .settings .dark-lang .dark-light-mode svg {
+  body.dark #root .mobile-nav .content .settings .dark-lang .dark-light-mode svg {
     cursor: url("https://eneskarapinar.github.io/aek/img/icon/cursor/d-link.svg"), pointer;
   }
-  body.dark .mobile-nav .content .settings .dark-lang .dark-light-mode svg:nth-child(1) {
+  body.dark #root .mobile-nav .content .settings .dark-lang .dark-light-mode svg:nth-child(1) {
     left: -100%;
   }
-  body.dark .mobile-nav .content .settings .dark-lang .dark-light-mode svg:nth-child(2) {
+  body.dark #root .mobile-nav .content .settings .dark-lang .dark-light-mode svg:nth-child(2) {
     left: 0;
   }
 }
@@ -599,8 +599,17 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   font-weight: 500;
   color: #ffa621;
 }
-#root .homepage .text .top .typewrite .wrap {
-  border-right: 0.08em solid #ffa621;
+#root .homepage .text .top .typewrite .cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 #root .homepage .text .bottom h1 {
   font-size: 50px;
@@ -736,10 +745,16 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   font-weight: 700;
   color: #ffa621;
   line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #root .about .personel-info .content .right h4 span {
   font-weight: 400;
   color: #0a0f1b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #root .about .personel-info .content .right h4 span a {
   color: #0a0f1b;
@@ -872,6 +887,7 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   letter-spacing: 0.15em;
   color: #0a0f1b;
   text-align: center;
+  text-transform: uppercase;
 }
 #root .about .skills .content .skill .top h6 {
   font-size: 16px;
@@ -910,42 +926,6 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   border-radius: 50px;
   position: absolute;
   z-index: 1;
-}
-#root .about .skills .content .skill.html .bottom .circle {
-  bottom: 170px;
-}
-#root .about .skills .content .skill.html .bottom .background {
-  height: 180px;
-}
-#root .about .skills .content .skill.css .bottom .circle {
-  bottom: 180px;
-}
-#root .about .skills .content .skill.css .bottom .background {
-  height: 190px;
-}
-#root .about .skills .content .skill.scss .bottom .circle {
-  bottom: 150px;
-}
-#root .about .skills .content .skill.scss .bottom .background {
-  height: 160px;
-}
-#root .about .skills .content .skill.js .bottom .circle {
-  bottom: 90px;
-}
-#root .about .skills .content .skill.js .bottom .background {
-  height: 100px;
-}
-#root .about .skills .content .skill.jquery .bottom .circle {
-  bottom: 90px;
-}
-#root .about .skills .content .skill.jquery .bottom .background {
-  height: 100px;
-}
-#root .about .skills .content .skill.vue .bottom .circle {
-  bottom: 30px;
-}
-#root .about .skills .content .skill.vue .bottom .background {
-  height: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1014,47 +994,47 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
     font-size: 14px;
   }
 }
-#root .projects-s {
+body #root .projects-s {
   max-width: 100vw;
   min-height: 100vh;
   padding: 200px 50px 100px 50px;
   background-color: #fbfaf5;
 }
-#root .projects-s .filter-links {
+body #root .projects-s .filter-links {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-#root .projects-s .filter-links .link {
+body #root .projects-s .filter-links .link {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-#root .projects-s .filter-links .link h6 {
+body #root .projects-s .filter-links .link h6 {
   cursor: url("https://eneskarapinar.github.io/aek/img/icon/cursor/l-link.svg"), auto;
   font-size: 16px;
   font-weight: 500;
   color: #0a0f1b;
 }
-#root .projects-s .filter-links .link .underline {
+body #root .projects-s .filter-links .link .underline {
   width: 100%;
   height: 2px;
   background-color: #ffa621;
   margin-left: -100%;
   transition: 400ms all;
 }
-#root .projects-s .filter-links .link:hover .underline {
+body #root .projects-s .filter-links .link:hover .underline {
   margin-left: -50%;
 }
-#root .projects-s .filter-links .link.active h6 {
+body #root .projects-s .filter-links .link.active h6 {
   color: #ffa621;
 }
-#root .projects-s .filter-links .link.active .underline {
+body #root .projects-s .filter-links .link.active .underline {
   margin-left: 0;
 }
-#root .projects-s .projects-modals .projects {
+body #root .projects-s .projects-modals .projects {
   margin-top: 100px;
   display: flex;
   gap: 50px;
@@ -1062,7 +1042,7 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   justify-content: center;
   flex-direction: row;
 }
-#root .projects-s .projects-modals .projects .project-box {
+body #root .projects-s .projects-modals .projects .project-box {
   display: none;
   width: 25vw;
   aspect-ratio: 3/2;
@@ -1071,20 +1051,20 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   box-shadow: 0px 0px 8px rgba(10, 15, 27, 0.25);
   position: relative;
 }
-#root .projects-s .projects-modals .projects .project-box a {
+body #root .projects-s .projects-modals .projects .project-box a {
   display: grid;
   height: 100%;
 }
-#root .projects-s .projects-modals .projects .project-box a .img {
+body #root .projects-s .projects-modals .projects .project-box a .img {
   overflow: hidden;
 }
-#root .projects-s .projects-modals .projects .project-box a .img img {
+body #root .projects-s .projects-modals .projects .project-box a .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#root .projects-s .projects-modals .projects .project-box a .hover {
+body #root .projects-s .projects-modals .projects .project-box a .hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1102,16 +1082,16 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
           backdrop-filter: blur(20px);
   transition: 400ms all;
 }
-#root .projects-s .projects-modals .projects .project-box a .hover.dark {
+body #root .projects-s .projects-modals .projects .project-box a .hover.dark {
   color: #fbfaf5;
 }
-#root .projects-s .projects-modals .projects .project-box:hover .hover {
+body #root .projects-s .projects-modals .projects .project-box:hover .hover {
   left: 0;
 }
-#root .projects-s .projects-modals .projects .project-box.active {
+body #root .projects-s .projects-modals .projects .project-box.active {
   display: block;
 }
-#root .projects-s .projects-modals .modals {
+body #root .projects-s .projects-modals .modals {
   position: fixed;
   top: 0;
   left: 0;
@@ -1123,9 +1103,9 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   padding: 20px;
   display: none;
   opacity: 0;
-  transition: 400ms all;
+  transition: 400ms;
 }
-#root .projects-s .projects-modals .modals .modal {
+body #root .projects-s .projects-modals .modals .modal {
   width: 40vw;
   height: 95%;
   background-color: #fbfaf5;
@@ -1137,73 +1117,80 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   transition: 400ms all;
 }
-#root .projects-s .projects-modals .modals .modal .img {
+body #root .projects-s .projects-modals .modals .modal .top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 90%;
+}
+body #root .projects-s .projects-modals .modals .modal .top .img {
   overflow: hidden;
   border-radius: 10px;
   aspect-ratio: 16/9;
 }
-#root .projects-s .projects-modals .modals .modal .img img {
+body #root .projects-s .projects-modals .modals .modal .top .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#root .projects-s .projects-modals .modals .modal .img video {
+body #root .projects-s .projects-modals .modals .modal .top .img video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#root .projects-s .projects-modals .modals .modal .content {
+body #root .projects-s .projects-modals .modals .modal .top .content {
   display: flex;
   flex-direction: column;
-  height: 50%;
-  justify-content: space-between;
+  gap: 30px;
+  overflow-y: auto;
+  height: 65%;
 }
-#root .projects-s .projects-modals .modals .modal .content .hood {
+body #root .projects-s .projects-modals .modals .modal .top .content .hood {
   display: flex;
   flex-direction: column;
 }
-#root .projects-s .projects-modals .modals .modal .content .hood h2 {
+body #root .projects-s .projects-modals .modals .modal .top .content .hood h2 {
   font-size: 24px;
   font-weight: 700;
   color: #0a0f1b;
 }
-#root .projects-s .projects-modals .modals .modal .content .hood h2 span {
+body #root .projects-s .projects-modals .modals .modal .top .content .hood h2 span {
   color: #ffa621;
 }
-#root .projects-s .projects-modals .modals .modal .content .hood .underline {
+body #root .projects-s .projects-modals .modals .modal .top .content .hood .underline {
   height: 2px;
   width: 50px;
   background: #ffa621;
 }
-#root .projects-s .projects-modals .modals .modal .content .substance {
+body #root .projects-s .projects-modals .modals .modal .top .content .substance {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#root .projects-s .projects-modals .modals .modal .content .substance h4 {
+body #root .projects-s .projects-modals .modals .modal .top .content .substance h4 {
   font-size: 16px;
   font-weight: 700;
   color: #ffa621;
 }
-#root .projects-s .projects-modals .modals .modal .content .substance h4 span {
+body #root .projects-s .projects-modals .modals .modal .top .content .substance h4 span {
   font-weight: 400;
   color: #0a0f1b;
 }
-#root .projects-s .projects-modals .modals .modal .content .substance h4 span a {
+body #root .projects-s .projects-modals .modals .modal .top .content .substance h4 span a {
   color: #0a0f1b;
   text-decoration: underline;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns {
   display: flex;
   gap: 20px;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a {
   display: flex;
   padding: 10px;
   width: 100%;
@@ -1216,31 +1203,31 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
   line-height: 24px;
   gap: 10px;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a span {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a span {
   display: flex;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a span svg {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a span svg {
   width: 18px;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a:nth-child(1) {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a:nth-child(1) {
   border: 2px solid #ffa621;
   color: #0a0f1b;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a:nth-child(1) span svg {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a:nth-child(1) span svg {
   fill: #0a0f1b;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a:nth-child(2) {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a:nth-child(2) {
   background-color: #ffa621;
   color: #fbfaf5;
 }
-#root .projects-s .projects-modals .modals .modal .content .btns a:nth-child(2) span svg {
+body #root .projects-s .projects-modals .modals .modal .bottom .btns a:nth-child(2) span svg {
   fill: #fbfaf5;
 }
-#root .projects-s .projects-modals .modals.active {
+body #root .projects-s .projects-modals .modals.active {
   display: block;
   opacity: 1;
 }
-#root .projects-s .projects-modals .modals.active .modal.active {
+body #root .projects-s .projects-modals .modals.active .modal.active {
   left: 0;
 }
 
@@ -1656,182 +1643,182 @@ body.dark #root nav .navbar .settings .dark-light-mode svg:nth-child(2) {
     font-size: 12px;
   }
 }
-body.dark main nav .navbar .logo a img:nth-child(1) {
+body.dark #root nav .navbar .logo a img:nth-child(1) {
   display: none;
 }
-body.dark main nav .navbar .logo a img:nth-child(2) {
+body.dark #root nav .navbar .logo a img:nth-child(2) {
   display: block;
 }
-body.dark main nav .navbar .content .pages .page h6 {
+body.dark #root nav .navbar .content .pages .page h6 {
   color: #fbfaf5;
 }
-body.dark main nav .navbar .content .pages .page.active h6 {
+body.dark #root nav .navbar .content .pages .page.active h6 {
   color: #ffa621;
 }
-body.dark main nav .navbar.change {
+body.dark #root nav .navbar.change {
   background-color: #0a0f1b;
   box-shadow: 0px 0px 5px rgba(251, 250, 245, 0.25);
 }
-body.dark main .homepage {
+body.dark #root .homepage {
   background-color: #0a0f1b;
 }
-body.dark main .homepage .text .bottom h1 {
+body.dark #root .homepage .text .bottom h1 {
   color: #fbfaf5;
 }
-body.dark main .homepage .img .shadow {
+body.dark #root .homepage .img .shadow {
   background: linear-gradient(359.93deg, #0a0f1b 0.06%, rgba(10, 15, 27, 0) 35.62%);
 }
-body.dark main .about {
+body.dark #root .about {
   background-color: #0a0f1b;
 }
-body.dark main .about .personel-info .hood h2 {
+body.dark #root .about .personel-info .hood h2 {
   color: #fbfaf5;
 }
-body.dark main .about .personel-info .content .right h4 span {
+body.dark #root .about .personel-info .content .right h4 span {
   color: #fbfaf5;
 }
-body.dark main .about .personel-info .content .right h4 span a {
+body.dark #root .about .personel-info .content .right h4 span a {
   color: #fbfaf5;
 }
-body.dark main .about .personel-info .content .left .top h4 {
+body.dark #root .about .personel-info .content .left .top h4 {
   color: #fbfaf5;
 }
-body.dark main .about .personel-info .content .left .top h5 span {
+body.dark #root .about .personel-info .content .left .top h5 span {
   color: #fbfaf5;
 }
-body.dark main .about .personel-info .content .left .bottom a {
+body.dark #root .about .personel-info .content .left .bottom a {
   color: #fbfaf5;
 }
-body.dark main .about .skills .hood h2 {
+body.dark #root .about .skills .hood h2 {
   color: #fbfaf5;
 }
-body.dark main .about .skills .content .skill .top h5 {
+body.dark #root .about .skills .content .skill .top h5 {
   color: #fbfaf5;
 }
-body.dark main .about .skills .content .skill .bottom .circle {
+body.dark #root .about .skills .content .skill .bottom .circle {
   border: 2px solid #0a0f1b;
 }
-body.dark main .projects-s {
+body.dark #root .projects-s {
   background-color: #0a0f1b;
 }
-body.dark main .projects-s .filter-links .link h6 {
+body.dark #root .projects-s .filter-links .link h6 {
   color: #fbfaf5;
 }
-body.dark main .projects-s .filter-links .link.active h6 {
+body.dark #root .projects-s .filter-links .link.active h6 {
   color: #ffa621;
 }
-body.dark main .projects-s .projects-modals .projects .project-box {
+body.dark #root .projects-s .projects-modals .projects .project-box {
   box-shadow: 0px 0px 8px rgba(251, 250, 245, 0.25);
 }
-body.dark main .projects-s .projects-modals .projects .project-box a .hover {
+body.dark #root .projects-s .projects-modals .projects .project-box a .hover {
   color: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals {
+body.dark #root .projects-s .projects-modals .modals {
   background: rgba(251, 250, 245, 0.2);
 }
-body.dark main .projects-s .projects-modals .modals .modal {
+body.dark #root .projects-s .projects-modals .modals .modal {
   background-color: #0a0f1b;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
 }
-body.dark main .projects-s .projects-modals .modals .modal .img {
+body.dark #root .projects-s .projects-modals .modals .modal .top .img {
   border: 1px solid rgba(251, 250, 245, 0.2);
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .hood h2 {
+body.dark #root .projects-s .projects-modals .modals .modal .top .content .hood h2 {
   color: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .substance h4 span {
+body.dark #root .projects-s .projects-modals .modals .modal .top .content .substance h4 span {
   color: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .substance h4 span a {
+body.dark #root .projects-s .projects-modals .modals .modal .top .content .substance h4 span a {
   color: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .btns a:nth-child(1) {
+body.dark #root .projects-s .projects-modals .modals .modal .top .bottom .btns a:nth-child(1) {
   color: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .btns a:nth-child(1) span svg {
+body.dark #root .projects-s .projects-modals .modals .modal .top .bottom .btns a:nth-child(1) span svg {
   fill: #fbfaf5;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .btns a:nth-child(2) {
+body.dark #root .projects-s .projects-modals .modals .modal .top .bottom .btns a:nth-child(2) {
   color: #0a0f1b;
 }
-body.dark main .projects-s .projects-modals .modals .modal .content .btns a:nth-child(2) span svg {
+body.dark #root .projects-s .projects-modals .modals .modal .top .bottom .btns a:nth-child(2) span svg {
   fill: #0a0f1b;
 }
-body.dark main .certificates-s {
+body.dark #root .certificates-s {
   background-color: #0a0f1b;
 }
-body.dark main .certificates-s .filter-links .link h6 {
+body.dark #root .certificates-s .filter-links .link h6 {
   color: #fbfaf5;
 }
-body.dark main .certificates-s .filter-links .link.active h6 {
+body.dark #root .certificates-s .filter-links .link.active h6 {
   color: #ffa621;
 }
-body.dark main .certificates-s .certificates .certificate-box {
+body.dark #root .certificates-s .certificates .certificate-box {
   box-shadow: 0px 0px 8px rgba(251, 250, 245, 0.25);
 }
-body.dark main .certificates-s .certificates .certificate-box a .hover {
+body.dark #root .certificates-s .certificates .certificate-box a .hover {
   color: #fbfaf5;
 }
-body.dark main .contact {
+body.dark #root .contact {
   background-color: #0a0f1b;
 }
-body.dark main .contact .content .right .top {
+body.dark #root .contact .content .right .top {
   color: #fbfaf5;
 }
-body.dark main .contact .content .right .top svg {
+body.dark #root .contact .content .right .top svg {
   fill: #fbfaf5;
 }
-body.dark main .contact .content .right .bottom a svg {
+body.dark #root .contact .content .right .bottom a svg {
   fill: #fbfaf5;
 }
-body.dark main .contact .content .left {
+body.dark #root .contact .content .left {
   color: #fbfaf5;
 }
-body.dark main .contact .content .left .text h2::-moz-selection {
+body.dark #root .contact .content .left .text h2::-moz-selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left .text h2::selection {
+body.dark #root .contact .content .left .text h2::selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left .text h5 span svg {
+body.dark #root .contact .content .left .text h5 span svg {
   fill: #fbfaf5;
 }
-body.dark main .contact .content .left .text h5::-moz-selection {
+body.dark #root .contact .content .left .text h5::-moz-selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left .text h5::selection {
+body.dark #root .contact .content .left .text h5::selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left form input, body.dark main #root .contact .content .left form textarea, #root body.dark main .contact .content .left form textarea {
+body.dark #root .contact .content .left form input, body.dark #root .contact .content .left form textarea {
   border-bottom: 2px solid #fbfaf5;
   color: #fbfaf5;
 }
-body.dark main .contact .content .left form input::-moz-placeholder, body.dark main #root .contact .content .left form textarea::-moz-placeholder, #root body.dark main .contact .content .left form textarea::-moz-placeholder {
+body.dark #root .contact .content .left form input::-moz-placeholder, body.dark #root .contact .content .left form textarea::-moz-placeholder {
   color: #fbfaf5;
 }
-body.dark main .contact .content .left form input::placeholder, body.dark main #root .contact .content .left form textarea::placeholder, #root body.dark main .contact .content .left form textarea::placeholder {
+body.dark #root .contact .content .left form input::placeholder, body.dark #root .contact .content .left form textarea::placeholder {
   color: #fbfaf5;
 }
-body.dark main .contact .content .left form input:-ms-input-placeholder, body.dark main #root .contact .content .left form textarea:-ms-input-placeholder, #root body.dark main .contact .content .left form textarea:-ms-input-placeholder {
+body.dark #root .contact .content .left form input:-ms-input-placeholder, body.dark #root .contact .content .left form textarea:-ms-input-placeholder {
   color: #fbfaf5;
 }
-body.dark main .contact .content .left form input::-ms-input-placeholder, body.dark main #root .contact .content .left form textarea::-ms-input-placeholder, #root body.dark main .contact .content .left form textarea::-ms-input-placeholder {
+body.dark #root .contact .content .left form input::-ms-input-placeholder, body.dark #root .contact .content .left form textarea::-ms-input-placeholder {
   color: #fbfaf5;
 }
-body.dark main .contact .content .left form input::-moz-selection, body.dark main #root .contact .content .left form textarea::-moz-selection, #root body.dark main .contact .content .left form textarea::-moz-selection {
+body.dark #root .contact .content .left form input::-moz-selection, body.dark #root .contact .content .left form textarea::-moz-selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left form input::selection, body.dark main #root .contact .content .left form textarea::selection, #root body.dark main .contact .content .left form textarea::selection {
+body.dark #root .contact .content .left form input::selection, body.dark #root .contact .content .left form textarea::selection {
   background-color: #fbfaf5;
 }
-body.dark main .contact .content .left form button {
+body.dark #root .contact .content .left form button {
   color: #0a0f1b;
   background-color: #fbfaf5;
 }
-body.dark main .scroll-top {
+body.dark #root .scroll-top {
   border: 2px solid #fbfaf5;
 }
-body.dark main .scroll-top span svg {
+body.dark #root .scroll-top span svg {
   fill: #fbfaf5;
 }
 body.dark #loader-container {

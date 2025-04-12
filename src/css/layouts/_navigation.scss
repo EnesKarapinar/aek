@@ -96,7 +96,7 @@ body {
                 font-weight: map-get($font-weight, "b");
                 color: map-get($color, "orange");
                 position: absolute;
-                top: 0;
+                top: calc((100% / 2) - (20px / 2));
                 transition: 400ms all;
                 &:nth-child(1) {
                   left: 0;
@@ -138,27 +138,25 @@ body {
           transition: 400ms;
         }
       }
-    }
-    .mobile-nav {
-      display: none;
-    }
-  }
-  &.en {
-    nav {
-      .navbar {
-        .settings {
-          .languages {
-            span {
-              &:nth-child(1) {
-                left: -100% !important;
-              }
-              &:nth-child(2) {
-                left: 0 !important;
+      &.en {
+        .navbar {
+          .settings {
+            .languages {
+              span {
+                &:nth-child(1) {
+                  left: -100% !important;
+                }
+                &:nth-child(2) {
+                  left: 0 !important;
+                }
               }
             }
           }
         }
       }
+    }
+    .mobile-nav {
+      display: none;
     }
   }
   &.dark {
@@ -202,25 +200,27 @@ body {
 
 @include mediaQuery(992px) {
   // 769px
-  #root {
-    nav {
-      .navbar {
-        .logo {
-          width: 80px;
-          height: 20px;
-        }
-        .content {
-          gap: 20px;
-          .pages {
-            gap: 15px;
-            .page {
-              h6 {
-                font-size: 16px;
+  body {
+    #root {
+      nav {
+        .navbar {
+          .logo {
+            width: 80px;
+            height: 20px;
+          }
+          .content {
+            gap: 20px;
+            .pages {
+              gap: 15px;
+              .page {
+                h6 {
+                  font-size: 16px;
+                }
               }
             }
-          }
-          .settings {
-            gap: 10px;
+            .settings {
+              gap: 10px;
+            }
           }
         }
       }
@@ -376,23 +376,25 @@ body {
       }
     }
     &.dark {
-      .mobile-nav {
-        .content {
-          .settings {
-            .dark-lang {
-              .languages {
-                span {
-                  cursor: map-get($cursor-link, "d-link"), pointer;
-                }
-              }
-              .dark-light-mode {
-                svg {
-                  cursor: map-get($cursor-link, "d-link"), pointer;
-                  &:nth-child(1) {
-                    left: -100%;
+      #root {
+        .mobile-nav {
+          .content {
+            .settings {
+              .dark-lang {
+                .languages {
+                  span {
+                    cursor: map-get($cursor-link, "d-link"), pointer;
                   }
-                  &:nth-child(2) {
-                    left: 0;
+                }
+                .dark-light-mode {
+                  svg {
+                    cursor: map-get($cursor-link, "d-link"), pointer;
+                    &:nth-child(1) {
+                      left: -100%;
+                    }
+                    &:nth-child(2) {
+                      left: 0;
+                    }
                   }
                 }
               }

@@ -12,6 +12,9 @@ $(window).scroll(function () {
 export function activePage(path, e) {
   $("nav .pages .page").removeClass("active");
   switch (path) {
+    case "":
+      $("nav .page.navHome").addClass("active");
+      break;
     case "#/":
       $("nav .page.navHome").addClass("active");
       break;
@@ -36,23 +39,6 @@ export function activePage(path, e) {
 // Switch Lang
 // $(".languages").click(function () {
 //   $("body").toggleClass("en");
-// });
-
-//// Dark Mode
-// Control Dark Mode
-// if (localStorage.getItem("dark") === "enabled") {
-//   $("body").addClass("dark");
-// } else {
-//   $("body").removeClass("dark");
-// }
-// Switch Dark Mode
-// $(".dark-light-mode").click(function () {
-//   $("body").toggleClass("dark");
-//   if ($("body").hasClass("dark")) {
-//     localStorage.setItem("dark", "enabled");
-//   } else {
-//     localStorage.setItem("dark", null);
-//   }
 // });
 
 // Mobile Nav Settings

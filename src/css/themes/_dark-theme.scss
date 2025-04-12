@@ -1,5 +1,5 @@
 body.dark {
-  main {
+  #root {
     // Navbar
     nav {
       .navbar {
@@ -148,40 +148,44 @@ body.dark {
           .modal {
             background-color: map-get($color, "black");
             box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
-            .img {
-              border: 1px solid rgba(251, 250, 245, 0.2);
-            }
-            .content {
-              .hood {
-                h2 {
-                  color: map-get($color, "white");
-                }
+            .top {
+              .img {
+                border: 1px solid rgba(251, 250, 245, 0.2);
               }
-              .substance {
-                h4 {
-                  span {
+              .content {
+                .hood {
+                  h2 {
                     color: map-get($color, "white");
-                    a {
-                      color: map-get($color, "white");
-                    }
                   }
                 }
-              }
-              .btns {
-                a {
-                  &:nth-child(1) {
-                    color: map-get($color, "white");
+                .substance {
+                  h4 {
                     span {
-                      svg {
-                        fill: map-get($color, "white");
+                      color: map-get($color, "white");
+                      a {
+                        color: map-get($color, "white");
                       }
                     }
                   }
-                  &:nth-child(2) {
-                    color: map-get($color, "black");
-                    span {
-                      svg {
-                        fill: map-get($color, "black");
+                }
+              }
+              .bottom {
+                .btns {
+                  a {
+                    &:nth-child(1) {
+                      color: map-get($color, "white");
+                      span {
+                        svg {
+                          fill: map-get($color, "white");
+                        }
+                      }
+                    }
+                    &:nth-child(2) {
+                      color: map-get($color, "black");
+                      span {
+                        svg {
+                          fill: map-get($color, "black");
+                        }
                       }
                     }
                   }

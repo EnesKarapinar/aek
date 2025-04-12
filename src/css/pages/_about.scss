@@ -39,9 +39,15 @@
             font-weight: map-get($font-weight, "b");
             color: map-get($color, "orange");
             line-height: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             span {
               font-weight: map-get($font-weight, "r");
               color: map-get($color, "black");
+              display: flex;
+              align-items: center;
+              gap: 8px;
               a {
                 color: map-get($color, "black");
               }
@@ -176,6 +182,7 @@
               letter-spacing: 0.15em;
               color: map-get($color, "black");
               text-align: center;
+              text-transform: uppercase;
             }
             h6 {
               font-size: 16px;
@@ -214,66 +221,6 @@
               border-radius: 50px;
               position: absolute;
               z-index: 1;
-            }
-          }
-          &.html {
-            .bottom {
-              .circle {
-                @include top(90);
-              }
-              .background {
-                @include yuzde(90);
-              }
-            }
-          }
-          &.css {
-            .bottom {
-              .circle {
-                @include top(95);
-              }
-              .background {
-                @include yuzde(95);
-              }
-            }
-          }
-          &.scss {
-            .bottom {
-              .circle {
-                @include top(80);
-              }
-              .background {
-                @include yuzde(80);
-              }
-            }
-          }
-          &.js {
-            .bottom {
-              .circle {
-                @include top(50);
-              }
-              .background {
-                @include yuzde(50);
-              }
-            }
-          }
-          &.jquery {
-            .bottom {
-              .circle {
-                @include top(50);
-              }
-              .background {
-                @include yuzde(50);
-              }
-            }
-          }
-          &.vue {
-            .bottom {
-              .circle {
-                @include top(20);
-              }
-              .background {
-                @include yuzde(20);
-              }
             }
           }
         }
