@@ -102,7 +102,10 @@ class About extends Component {
                   </div>
                 </div>
                 <div className="bottom">
-                  <a href="/img/cv/Abdullah_Enes_Karapinar_CV.pdf" download>
+                  <a
+                    href="https://eneskarapinar.github.io/aek/img/cv/Abdullah_Enes_Karapinar_CV.pdf"
+                    download
+                  >
                     {t("download_cv")}
                   </a>
                 </div>
