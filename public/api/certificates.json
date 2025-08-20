@@ -12,7 +12,7 @@
     "category": "web-programlama-box",
     "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/webProgramlama.png",
     "link": "https://lean-sleep-c78.notion.site/Web-Programlama-c002f29e94e442049cfe88e19e56d788",
-    "desc": "Web Programlama",
+    "desc": "Web Programlama 101-201",
     "class": ""
   },
   {
@@ -69,6 +69,14 @@
     "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/unityCSharp.jpg",
     "link": "https://lean-sleep-c78.notion.site/Unity-C-1d064c8478764d78aefffa1d2a4e009e?pvs=4",
     "desc": "Unity C#",
+    "class": ""
+  },
+  {
+    "id": 9,
+    "category": "oyun-programlama-box",
+    "imgPath": "https://eneskarapinar.github.io/aek/img/certificates/HSDOyunGelistirmeEgitimi.png",
+    "link": "https://lean-sleep-c78.notion.site/HSD-Oyun-Geli-tirme-E-itimi-2551b01d190980869b4cc9003ad3ff45?source=copy_link",
+    "desc": "HSD Oyun Geliştirme Eğitimi",
     "class": ""
   }
 ]
